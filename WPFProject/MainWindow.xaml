@@ -1,0 +1,71 @@
+﻿<Window
+    x:Class="WPFProject.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="ShopManager"
+    Height="700"
+    Width="1100"
+    WindowStartupLocation="CenterScreen"
+    Background="#F3F4F6">
+
+    <DockPanel>
+
+        <Border
+            DockPanel.Dock="Top"
+            Height="60"
+            Background="#2563EB">
+
+            <TextBlock
+                Text="Shop Manager Admin Panel Asd"
+                Foreground="White"
+                FontSize="28"
+                FontWeight="Bold"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
+        </Border>
+
+        <Border
+            DockPanel.Dock="Left"
+            Width="220"
+            Background="#1E293B">
+
+            <ListView
+                Background="Transparent"
+                BorderThickness="0"
+                Foreground="White"
+                FontSize="20">
+
+                <ListViewItem Content="Dashboard"/>
+                <ListViewItem Content="Felhasználók"/>
+                <ListViewItem Content="Vásárlók"/>
+                <ListViewItem Content="Termékek"/>
+                <ListViewItem Content="Beállítások"/>
+                <ListViewItem Content="Kilépés"/>
+
+            </ListView>
+
+        </Border>
+
+        <Grid Background="White">
+
+            <StackPanel
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+
+                <TextBlock
+                    Text="ShopManager rendszer"
+                    FontSize="34"
+                    FontWeight="Bold"
+                    Foreground="#1E293B"
+                    Margin="0,0,0,20"/>
+
+            </StackPanel>
+
+        </Grid>
+
+    </DockPanel>
+
+</Window>
