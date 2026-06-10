@@ -9,8 +9,28 @@
     <Grid Background="White">
         <StackPanel Margin="30">
             <TextBlock Text="Termékek" FontSize="32" FontWeight="Bold" Margin="0,0,0,20"/>
-            <DataGrid Height="400"/>
+
+
+            <WrapPanel Margin="0,20,0,20">
+                <TextBox x:Name="txtName" Width="150" Margin="5" Height="30"/>
+                <TextBox x:Name="txtDescription" Width="150" Margin="5" Height="30"/>
+                <TextBox x:Name="txtPrice" Width="100" Margin="5" Height="30"/>
+                <TextBox x:Name="txtCategory" Width="120" Margin="5" Height="30"/>
+                <TextBox x:Name="txtBrand" Width="120" Margin="5" Height="30"/>
+                <TextBox x:Name="txtWeight" Width="100" Margin="5" Height="30"/>
+                <Button x:Name="btnAdd" Content="Hozzáadás" Width="120" Height="30" Margin="5" Click="btnAdd_Click"/>
+                <Button x:Name="btnDelete" Content="Törlés" Width="120" Height="30" Margin="5" Click="btnDelete_Click"/>
+                <Button x:Name="btnUpdate"
+        Content="Módosítás"
+        Width="120"
+        Height="30"
+        Margin="5"
+        Click="btnUpdate_Click"/>
+
+            </WrapPanel>
+            <DataGrid Height="400" x:Name="productsGrid" SelectionChanged="productsGrid_SelectionChanged"/>
             <Button Content="Új termék" Width="200" Height="45" Margin="0,20,0,0" Background="#DC2626" Foreground="White"/>
+            
         </StackPanel>
     </Grid>
 </UserControl>

@@ -42,7 +42,6 @@
                 <ListViewItem Content="Felhasználók" x:Name="Users" MouseLeftButtonUp="Users_MouseLeftButtonUp"/>
                 <ListViewItem Content="Vásárlók" x:Name="Costumers" MouseLeftButtonUp="Costumers_MouseLeftButtonUp"/>
                 <ListViewItem Content="Termékek" x:Name="Products" MouseLeftButtonUp="Products_MouseLeftButtonUp"/>
-                <ListViewItem Content="Beállítások" x:Name="Settings" MouseLeftButtonUp="Settings_MouseLeftButtonUp"/>
                 <ListViewItem Content="Kilépés" x:Name="kilepesMenu" MouseLeftButtonUp="kilepesMenu_MouseLeftButtonUp"  />
 
             </ListView>
